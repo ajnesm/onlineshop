@@ -1,0 +1,129 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header { grid-area: header; }
+.item2 { grid-area: menu; }
+.body { grid-area: body; }
+.footer { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header '
+        'menu body body body body '
+        'footer footer footer footer footer ';
+    grid-gap: 10px;
+    padding: 10px;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+.grid-container > div {
+    text-align: center;
+    font-size: 30px;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.body-item {
+    padding: 2px;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.footer-item {
+    font-size: 15px;
+    background-color: #e4e4e4;
+    text-align: center;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: -22px;
+    padding-left: 30%;
+}
+.after-footer-item{
+    text-align: right;
+    margin-right: 18%;
+}
+
+.filter-container {
+    display: grid;
+    grid-template-columns: auto;
+}
+.filter-item {
+    font-size: 16px;
+    max-width: 1px;
+    padding-top: 10px;
+    margin-top: 20px;
+    color: #8d8d8d;
+    font-weight: bold;
+}
+
+.head-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.head-item {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#anestitel{
+    font-size: 35px;
+}
+#cart{
+    margin-top: 5px;
+    padding-top: 5px;
+}
+#small{
+    font-size: 15px;
+}
+#login{
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.head-item2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: yellow;
+}
+
+.body-bild{
+    max-width: 20px;
+    width: 100%;
+    zoom: 0.7;
+}
+
+.body-titel{
+    font-size: 20px;
+    text-align: left;
+}
+
+.body-preis{
+    font-size: 10px;
+    text-align: left;
+}
